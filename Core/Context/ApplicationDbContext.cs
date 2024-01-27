@@ -9,6 +9,8 @@ namespace Backend_Management.Core.Context
             { 
         }
 
+        public int CandidateId { get; set; }
+
         public DbSet<Company> Companies { get; set; }
         public DbSet<Job> Jobs { get; set; }
         public DbSet<Candidate> Candidates { get; set; }
@@ -34,6 +36,10 @@ namespace Backend_Management.Core.Context
             modelBuilder.Entity<Job>()
                .Property(job => job.Level)
                .HasConversion<string>();
+
+            modelBuilder.Entity<Candidate>().HasKey(c => c.CandidateId);
+            //modelBuilder.Entity<Candidate>().HasNoKey();
+
         }
     }
 }
