@@ -1,3 +1,4 @@
+
 using Backend_Management.Core.AutoMapperConfig;
 using Backend_Management.Core.Context;
 using Microsoft.EntityFrameworkCore;
@@ -21,7 +22,6 @@ builder.Services
         options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
     });
 
-//builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -35,6 +35,14 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors(options =>
+{
+    options
+    .AllowAnyOrigin()
+    .AllowAnyMethod()
+    .AllowAnyHeader();
+});
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
@@ -42,4 +50,3 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
-
