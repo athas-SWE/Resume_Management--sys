@@ -37,9 +37,6 @@ namespace Backend_Management.Core.Context
                .Property(job => job.Level)
                .HasConversion<string>();
 
-            modelBuilder.Entity<Candidate>().HasKey(c => c.CandidateId);
-            //modelBuilder.Entity<Candidate>().HasNoKey();
-
         }
     }
 }
