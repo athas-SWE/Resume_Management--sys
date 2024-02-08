@@ -1,6 +1,7 @@
-﻿using Backend_Management.Core.Enums;
+﻿
+using Backend_Management.Core.Enums;
 
-namespace Backend_Management.Core.Dtos.Company
+namespace backend.Core.Dtos.Company
 {
     public class CompanyGetDto
     {
