@@ -1,4 +1,5 @@
-﻿using Backend_Management.Core.Context;
+﻿using AutoMapper;
+using Backend_Management.Core.Context;
 using Backend_Management.Core.Dtos.Company;
 using Backend_Management.Core.Entities;
 using Microsoft.AspNetCore.Http;

@@ -1,3 +1,4 @@
+using Backend_Management.Core.AutoMapperConfig;
 using Backend_Management.Core.Context;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
@@ -11,9 +12,16 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 });
 
 // Automapper Configuration
+builder.Services.AddAutoMapper(typeof(AutoMapperConfigProfile));
 
+builder.Services
+    .AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+    });
 
-builder.Services.AddControllers();
+//builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
