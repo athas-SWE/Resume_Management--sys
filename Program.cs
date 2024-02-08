@@ -1,5 +1,5 @@
 
-using backend.Core.AutoMapperConfig;
+using Backend_Management.Core.AutoMapperConfig;
 using Backend_Management.Core.Context;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;

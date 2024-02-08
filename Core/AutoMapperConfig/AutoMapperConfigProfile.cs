@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
-using backend.Core.Dtos.Candidate;
-using backend.Core.Dtos.Company;
-using backend.Core.Dtos.Job;
+using Backend_Management.Core.Dtos.Candidate;
+using Backend_Management.Core.Dtos.Company;
+using Backend_Management.Core.Dtos.Job;
 using Backend_Management.Core.Entities;
 
-namespace backend.Core.AutoMapperConfig
+namespace Backend_Management.Core.AutoMapperConfig
 {
     public class AutoMapperConfigProfile : Profile
     {

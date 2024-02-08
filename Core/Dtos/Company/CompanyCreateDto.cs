@@ -1,7 +1,7 @@
 ﻿
 using Backend_Management.Core.Enums;
 
-namespace backend.Core.Dtos.Company
+namespace Backend_Management.Core.Dtos.Company
 {
     public class CompanyCreateDto
     {

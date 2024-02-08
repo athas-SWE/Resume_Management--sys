@@ -1,7 +1,4 @@
 ﻿using AutoMapper;
-using backend.Core.Context;
-using backend.Core.Dtos.Candidate;
-using backend.Core.Entities;
 using Backend_Management.Core.Context;
 using Backend_Management.Core.Dtos.Candidate;
 using Backend_Management.Core.Entities;
@@ -9,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace backend.Controllers
+namespace Backend_Management.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

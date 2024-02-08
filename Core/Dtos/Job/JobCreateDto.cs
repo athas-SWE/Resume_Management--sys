@@ -1,7 +1,7 @@
 ﻿
 using Backend_Management.Core.Enums;
 
-namespace backend.Core.Dtos.Job
+namespace Backend_Management.Core.Dtos.Job
 {
     public class JobCreateDto
     {
