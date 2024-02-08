@@ -1,9 +1,10 @@
 ﻿using AutoMapper;
+using backend.Core.Dtos.Job;
 using Backend_Management.Core.Context;
-using Backend_Management.Core.Dtos.Job;
 using Backend_Management.Core.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Backend_Management.Controllers
 {
